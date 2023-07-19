@@ -6,7 +6,7 @@ import java.util.ListIterator;
 
 public class ListEx2 {
     public static void main(String args[]) {
-        //
+        //dung ListIterator duyet List
         List<String> list = new ArrayList<String>();
         list.add("Java");
         list.add("C++");
