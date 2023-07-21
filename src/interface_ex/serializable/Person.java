@@ -37,4 +37,7 @@ public class Person implements Serializable {
     public String toString() {
         return String.format("name is %s, age = %d, address: %s", name, age, address);
     }
+
+    public void show() {
+    }
 }

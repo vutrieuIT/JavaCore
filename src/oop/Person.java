@@ -1,6 +1,6 @@
 package oop;
 
-public class Person {
+public abstract class Person {
     private String name;
     public String getName() {
         return name;
@@ -13,7 +13,7 @@ public class Person {
         System.out.printf("name is %s\n", this.name);
     }
 
-    public void show(String address){
-        System.out.printf("name is %s, addess is %s\n", this.name, address);
-    }
+    public abstract void introduce();
+
+
 }

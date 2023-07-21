@@ -12,6 +12,11 @@ public class Teacher extends Person{
     }
 
     public void show(){
-        System.out.printf("name is %s, teaching class %s", this.getName(), this.clazz);
+        System.out.printf("name is %s, teaching class %s\n", this.getName(), this.clazz);
+    }
+
+    @Override
+    public void introduce() {
+        System.out.printf("I'm %s, I teach class %s\n", this.getName(), this.clazz);
     }
 }
