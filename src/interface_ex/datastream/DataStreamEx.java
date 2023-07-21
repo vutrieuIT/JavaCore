@@ -12,6 +12,7 @@ public class DataStreamEx {
             dos = new DataOutputStream(fout);
 
             dos.writeInt(1);
+            dos.writeUTF("Xin chào tôi là triệu");
 
         } catch (Exception e){
             System.out.println(e);
@@ -27,7 +28,9 @@ public class DataStreamEx {
             dis = new DataInputStream(fin);
 
             int i = dis.readInt();
+            String str = dis.readUTF();
             System.out.println(i);
+            System.out.println(str);
         } catch (Exception e){
             System.out.println(e);
         } finally {
